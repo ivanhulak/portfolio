@@ -1,0 +1,66 @@
+.neon-text-cyan {
+  color: var(--neon-cyan);
+  text-shadow: 0 0 5px var(--neon-cyan), 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan), 0 0 40px var(--neon-cyan);
+}
+
+.neon-text-magenta {
+  color: var(--neon-magenta);
+  text-shadow: 0 0 5px var(--neon-magenta), 0 0 10px var(--neon-magenta), 0 0 20px var(--neon-magenta), 0 0 40px var(--neon-magenta);
+}
+
+.neon-text-green {
+  color: var(--neon-green);
+  text-shadow: 0 0 5px var(--neon-green), 0 0 10px var(--neon-green), 0 0 20px var(--neon-green), 0 0 40px var(--neon-green);
+}
+
+.neon-border-cyan {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 5px var(--neon-cyan), 0 0 10px var(--neon-cyan), inset 0 0 5px rgba(0, 255, 255, 0.1);
+}
+
+.neon-border-magenta {
+  border-color: var(--neon-magenta);
+  box-shadow: 0 0 5px var(--neon-magenta), 0 0 10px var(--neon-magenta), inset 0 0 5px rgba(255, 0, 255, 0.1);
+}
+
+.glow-card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.03), rgba(255, 0, 255, 0.03));
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glow-card::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(45deg, var(--neon-cyan), var(--neon-magenta), var(--neon-cyan));
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.glow-card:hover::before {
+  opacity: 0.5;
+  filter: blur(15px);
+}
+
+.glow-card:hover {
+  border-color: var(--neon-cyan);
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), 0 0 40px rgba(0, 255, 255, 0.1);
+}
+
+.scanline::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to bottom, transparent, rgba(0, 255, 255, 0.1), transparent);
+  animation: scan-line 8s linear infinite;
+  pointer-events: none;
+  z-index: 9999;
+}

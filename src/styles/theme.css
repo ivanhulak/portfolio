@@ -1,0 +1,127 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #050508;
+  --foreground: #f0f0f5;
+  --card: #0a0a10;
+  --card-foreground: #f0f0f5;
+  --popover: #0a0a10;
+  --popover-foreground: #f0f0f5;
+  --primary: #00ffff;
+  --primary-foreground: #050508;
+  --secondary: #0f0f18;
+  --secondary-foreground: #f0f0f5;
+  --muted: #0f0f18;
+  --muted-foreground: #888899;
+  --accent: #ff00ff;
+  --accent-foreground: #050508;
+  --destructive: #ff3366;
+  --destructive-foreground: #f0f0f5;
+  --border: #1a1a2e;
+  --input: #1a1a2e;
+  --ring: #00ffff;
+  --chart-1: #00ffff;
+  --chart-2: #ff00ff;
+  --chart-3: #00ff88;
+  --chart-4: #00ffff;
+  --chart-5: #ff00ff;
+  --radius: 0.5rem;
+  --neon-cyan: #00ffff;
+  --neon-magenta: #ff00ff;
+  --neon-green: #00ff88;
+  --sidebar: #0a0a10;
+  --sidebar-foreground: #f0f0f5;
+  --sidebar-primary: #00ffff;
+  --sidebar-primary-foreground: #050508;
+  --sidebar-accent: #0f0f18;
+  --sidebar-accent-foreground: #f0f0f5;
+  --sidebar-border: #1a1a2e;
+  --sidebar-ring: #00ffff;
+}
+
+.dark {
+  --background: #050508;
+  --foreground: #f0f0f5;
+  --card: #0a0a10;
+  --card-foreground: #f0f0f5;
+  --popover: #0a0a10;
+  --popover-foreground: #f0f0f5;
+  --primary: #00ffff;
+  --primary-foreground: #050508;
+  --secondary: #0f0f18;
+  --secondary-foreground: #f0f0f5;
+  --muted: #0f0f18;
+  --muted-foreground: #888899;
+  --accent: #ff00ff;
+  --accent-foreground: #050508;
+  --destructive: #ff3366;
+  --destructive-foreground: #f0f0f5;
+  --border: #1a1a2e;
+  --input: #1a1a2e;
+  --ring: #00ffff;
+  --chart-1: #00ffff;
+  --chart-2: #ff00ff;
+  --chart-3: #00ff88;
+  --chart-4: #00ffff;
+  --chart-5: #ff00ff;
+  --sidebar: #0a0a10;
+  --sidebar-foreground: #f0f0f5;
+  --sidebar-primary: #00ffff;
+  --sidebar-primary-foreground: #050508;
+  --sidebar-accent: #0f0f18;
+  --sidebar-accent-foreground: #f0f0f5;
+  --sidebar-border: #1a1a2e;
+  --sidebar-ring: #00ffff;
+}
+
+@theme inline {
+  --font-sans: 'Orbitron', 'Orbitron Fallback', sans-serif;
+  --font-mono: 'Fira Code', 'Fira Code Fallback', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-neon-cyan: var(--neon-cyan);
+  --color-neon-magenta: var(--neon-magenta);
+  --color-neon-green: var(--neon-green);
+
+  /* Moved from tailwind.config.ts for Tailwind v4 CSS-first config */
+  --color-neon-cyan-soft: #00d4ff;
+  --color-neon-magenta-soft: #d946ef;
+  --color-neon-green-soft: #22c55e;
+  --animate-glow-pulse: glow-pulse 2s ease-in-out infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-typing: typing 3.5s steps(30, end);
+}
