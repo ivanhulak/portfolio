@@ -11,3 +11,6 @@ export { default as PaletteIcon } from './palette.svg';
 export { default as RocketIcon } from './rocket.svg';
 export { default as ShieldIcon } from './shield.svg';
 export { default as TerminalIcon } from './terminal.svg';
+export { default as CalendarIcon } from './calendar.svg';
+export { default as MapPinIcon } from './map-pin.svg';
+export { default as BriefcaseIcon } from './briefcase.svg';
