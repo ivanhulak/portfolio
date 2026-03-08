@@ -2,12 +2,12 @@
 
 import { useEffect, useState } from 'react';
 
-import { heroRoles } from './hero/config';
-import { HeroBackground } from './hero/HeroBackground';
-import { HeroImageCard } from './hero/HeroImageCard';
-import { HeroTextContent } from './hero/HeroTextContent';
-import { ScrollIndicator } from './hero/ScrollIndicator';
-import { useHeroTypewriter } from './hero/useHeroTypewriter';
+import { heroRoles } from './config';
+import { HeroBackground } from './HeroBackground';
+import { HeroImageCard } from './HeroImageCard';
+import { HeroTextContent } from './HeroTextContent';
+import { ScrollIndicator } from './ScrollIndicator';
+import { useHeroTypewriter } from './useHeroTypewriter';
 
 export function HeroSection() {
 	const [mounted, setMounted] = useState(false);
