@@ -3,6 +3,16 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+
+  turbopack: {
+		rules: {
+			'*.svg': {
+				loaders: ['@svgr/webpack'],
+				as: '*.js',
+			},
+		},
+	},
+  
   images: {
     unoptimized: true,
   },
