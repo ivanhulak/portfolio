@@ -28,37 +28,37 @@ export const aboutSkills = [
 		icon: CodeIcon,
 		title: 'Frontend Development',
 		description: 'Building modern, responsive interfaces with React, Next.js, TypeScript.',
-		color: 'cyan',
+		color: 'primary',
 	},
 	{
 		icon: PaletteIcon,
 		title: 'UI/UX Design',
 		description: 'Creating intuitive experiences with attention to detail and accessibility.',
-		color: 'magenta',
+		color: 'accent',
 	},
 	{
 		icon: TerminalIcon,
 		title: 'Clean Code',
 		description: 'Writing maintainable, scalable code following best practices.',
-		color: 'green',
+		color: 'success',
 	},
 	{
 		icon: RocketIcon,
 		title: 'Performance',
 		description: 'Optimizing applications for speed and exceptional UX.',
-		color: 'cyan',
+		color: 'primary',
 	},
 	{
 		icon: ZapIcon,
 		title: 'Modern Stack',
 		description: 'Leveraging cutting-edge tools and frameworks.',
-		color: 'magenta',
+		color: 'accent',
 	},
 	{
 		icon: ShieldIcon,
 		title: 'Best Practices',
 		description: 'Security-first approach with industry standards.',
-		color: 'green',
+		color: 'success',
 	},
 ] as const;
 
@@ -82,28 +82,31 @@ export const aboutTechnologies = [
 ];
 
 export const aboutStats = [
-	{ value: 5, suffix: '+', label: 'Years Exp', textClass: 'text-[var(--neon-cyan)]' },
-	{ value: 15, suffix: '+', label: 'Projects', textClass: 'text-[var(--neon-magenta)]' },
-	{ value: 20, suffix: '+', label: 'Clients', textClass: 'text-[var(--neon-green)]' },
+	{ value: 5, suffix: '+', label: 'Years Exp', textClass: 'text-primary' },
+	{ value: 15, suffix: '+', label: 'Projects', textClass: 'text-accent' },
+	{ value: 20, suffix: '+', label: 'Clients', textClass: 'text-success' },
 ] as const;
 
 export const aboutSkillColorClasses = {
-	cyan: {
-		bg: 'bg-[var(--neon-cyan)]/10',
-		text: 'text-[var(--neon-cyan)]',
-		border: 'border-[var(--neon-cyan)]/30',
-		glow: 'group-hover:shadow-[0_0_40px_rgba(0,255,255,0.3)]',
+	primary: {
+		bg: 'bg-primary/10',
+		text: 'text-primary',
+		border: 'border-primary/30',
+		glow: 'group-hover:shadow-lg group-hover:shadow-primary/30',
+		hoverText: 'group-hover:text-primary',
 	},
-	magenta: {
-		bg: 'bg-[var(--neon-magenta)]/10',
-		text: 'text-[var(--neon-magenta)]',
-		border: 'border-[var(--neon-magenta)]/30',
-		glow: 'group-hover:shadow-[0_0_40px_rgba(255,0,255,0.3)]',
+	accent: {
+		bg: 'bg-accent/10',
+		text: 'text-accent',
+		border: 'border-accent/30',
+		glow: 'group-hover:shadow-lg group-hover:shadow-accent/30',
+		hoverText: 'group-hover:text-accent',
 	},
-	green: {
-		bg: 'bg-[var(--neon-green)]/10',
-		text: 'text-[var(--neon-green)]',
-		border: 'border-[var(--neon-green)]/30',
-		glow: 'group-hover:shadow-[0_0_40px_rgba(0,255,136,0.3)]',
+	success: {
+		bg: 'bg-success/10',
+		text: 'text-success',
+		border: 'border-success/30',
+		glow: 'group-hover:shadow-lg group-hover:shadow-success/30',
+		hoverText: 'group-hover:text-success',
 	},
 } as const;

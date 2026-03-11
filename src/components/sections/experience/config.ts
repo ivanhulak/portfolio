@@ -7,29 +7,29 @@ export const experienceContent = {
 } as const;
 
 export const experienceColorStyles = {
-	cyan: {
-		dot: 'bg-[var(--neon-cyan)] shadow-[0_0_20px_var(--neon-cyan)]',
-		border: 'hover:border-[var(--neon-cyan)]/50',
-		glow: 'hover:shadow-[0_0_30px_rgba(0,255,255,0.15)]',
-		text: 'text-[var(--neon-cyan)]',
-		hoverText: 'group-hover:text-[var(--neon-cyan)]',
-		pingBackground: 'var(--neon-cyan)',
+	primary: {
+		dot: 'bg-primary shadow-lg shadow-primary/40',
+		border: 'hover:border-primary/50',
+		glow: 'hover:shadow-lg hover:shadow-primary/20',
+		text: 'text-primary',
+		hoverText: 'group-hover:text-primary',
+		pingBackgroundClass: 'bg-primary',
 	},
-	magenta: {
-		dot: 'bg-[var(--neon-magenta)] shadow-[0_0_20px_var(--neon-magenta)]',
-		border: 'hover:border-[var(--neon-magenta)]/50',
-		glow: 'hover:shadow-[0_0_30px_rgba(255,0,255,0.15)]',
-		text: 'text-[var(--neon-magenta)]',
-		hoverText: 'group-hover:text-[var(--neon-magenta)]',
-		pingBackground: 'var(--neon-magenta)',
+	accent: {
+		dot: 'bg-accent shadow-lg shadow-accent/40',
+		border: 'hover:border-accent/50',
+		glow: 'hover:shadow-lg hover:shadow-accent/20',
+		text: 'text-accent',
+		hoverText: 'group-hover:text-accent',
+		pingBackgroundClass: 'bg-accent',
 	},
-	green: {
-		dot: 'bg-[var(--neon-green)] shadow-[0_0_20px_var(--neon-green)]',
-		border: 'hover:border-[var(--neon-green)]/50',
-		glow: 'hover:shadow-[0_0_30px_rgba(0,255,136,0.15)]',
-		text: 'text-[var(--neon-green)]',
-		hoverText: 'group-hover:text-[var(--neon-green)]',
-		pingBackground: 'var(--neon-green)',
+	success: {
+		dot: 'bg-success shadow-lg shadow-success/40',
+		border: 'hover:border-success/50',
+		glow: 'hover:shadow-lg hover:shadow-success/20',
+		text: 'text-success',
+		hoverText: 'group-hover:text-success',
+		pingBackgroundClass: 'bg-success',
 	},
 } as const;
 
@@ -54,7 +54,7 @@ export const experiences: readonly TExperience[] = [
 		description:
 			'Leading frontend architecture decisions, implementing scalable React patterns, and mentoring a team of 5 developers. Reduced bundle size by 40% and improved Core Web Vitals scores.',
 		technologies: ['React', 'Next.js', 'TypeScript', 'GraphQL', 'Tailwind'],
-		color: 'cyan',
+		color: 'primary',
 	},
 	{
 		role: 'Senior Frontend Developer',
@@ -64,7 +64,7 @@ export const experiences: readonly TExperience[] = [
 		description:
 			'Leading frontend architecture decisions, implementing scalable React patterns, and mentoring a team of 5 developers. Reduced bundle size by 40% and improved Core Web Vitals scores.',
 		technologies: ['React', 'Next.js', 'TypeScript', 'GraphQL', 'Tailwind'],
-		color: 'cyan',
+		color: 'primary',
 	},
 	{
 		role: 'Senior Frontend Developer',
@@ -74,6 +74,6 @@ export const experiences: readonly TExperience[] = [
 		description:
 			'Leading frontend architecture decisions, implementing scalable React patterns, and mentoring a team of 5 developers. Reduced bundle size by 40% and improved Core Web Vitals scores.',
 		technologies: ['React', 'Next.js', 'TypeScript', 'GraphQL', 'Tailwind'],
-		color: 'cyan',
+		color: 'primary',
 	},
 ] as const;

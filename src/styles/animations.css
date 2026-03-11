@@ -1,11 +1,11 @@
 @keyframes neon-pulse {
   0%,
   100% {
-    filter: drop-shadow(0 0 5px var(--neon-cyan)) drop-shadow(0 0 10px var(--neon-cyan)) drop-shadow(0 0 20px var(--neon-cyan));
+    filter: drop-shadow(0 0 5px var(--color-primary)) drop-shadow(0 0 10px var(--color-primary)) drop-shadow(0 0 20px var(--color-primary));
   }
 
   50% {
-    filter: drop-shadow(0 0 10px var(--neon-cyan)) drop-shadow(0 0 20px var(--neon-cyan)) drop-shadow(0 0 40px var(--neon-cyan));
+    filter: drop-shadow(0 0 10px var(--color-primary)) drop-shadow(0 0 20px var(--color-primary)) drop-shadow(0 0 40px var(--color-primary));
   }
 }
 
@@ -19,7 +19,7 @@
   56%,
   100% {
     opacity: 1;
-    text-shadow: 0 0 5px var(--neon-cyan), 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan), 0 0 40px var(--neon-cyan);
+    text-shadow: 0 0 5px var(--color-primary), 0 0 10px var(--color-primary), 0 0 20px var(--color-primary), 0 0 40px var(--color-primary);
   }
 
   20%,
@@ -68,13 +68,13 @@
 @keyframes border-glow {
   0%,
   100% {
-    border-color: var(--neon-cyan);
-    box-shadow: 0 0 5px var(--neon-cyan), inset 0 0 5px rgba(0, 255, 255, 0.1);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 5px var(--color-primary), inset 0 0 5px rgba(0, 255, 255, 0.1);
   }
 
   50% {
-    border-color: var(--neon-magenta);
-    box-shadow: 0 0 10px var(--neon-magenta), inset 0 0 10px rgba(255, 0, 255, 0.1);
+    border-color: var(--color-accent);
+    box-shadow: 0 0 10px var(--color-accent), inset 0 0 10px rgba(255, 0, 255, 0.1);
   }
 }
 

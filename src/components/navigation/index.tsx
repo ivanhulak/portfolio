@@ -1,8 +1,10 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import Link from 'next/link';
+
+import { cn } from '@/lib/utils';
 
 import { MenuIcon, XIcon } from '@/assets/icons';
 
@@ -39,11 +41,12 @@ export function Navigation() {
 
 	return (
 		<nav
-			className={`fixed top-0 right-0 left-0 z-50 transition-all duration-700 ease-out ${
+			className={cn(
+				'fixed top-0 right-0 left-0 z-50 transition-all duration-700 ease-out',
 				scrolled
-					? 'border-b border-[var(--neon-cyan)]/20 bg-[#050508]/90 shadow-[0_0_30px_rgba(0,255,255,0.1)] backdrop-blur-xl'
+					? 'border-primary/20 bg-background/90 shadow-primary/10 shadow-lg backdrop-blur-xl'
 					: 'bg-transparent'
-			}`}
+			)}
 		>
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
 				<div className="flex h-20 items-center justify-between">
@@ -59,22 +62,22 @@ export function Navigation() {
 							className="group relative ml-6 overflow-hidden rounded-lg px-6 py-2.5"
 						>
 							<span className="absolute inset-0 rounded-lg">
-								<span className="animate-gradient-shift absolute inset-[-2px] rounded-lg bg-gradient-to-r from-[var(--neon-cyan)] via-[var(--neon-magenta)] to-[var(--neon-cyan)] bg-[length:200%_100%]" />
-								<span className="absolute inset-[1px] rounded-lg bg-[#050508]" />
+								<span className="from-primary via-accent to-primary animate-gradient-shift absolute inset-[-2px] rounded-lg bg-gradient-to-r bg-[length:200%_100%]" />
+								<span className="bg-background absolute inset-[1px] rounded-lg" />
 							</span>
-							<span className="text-foreground relative z-10 text-sm font-semibold tracking-[0.15em] uppercase transition-colors duration-300 group-hover:text-[var(--neon-cyan)]">
+							<span className="text-foreground group-hover:text-primary relative z-10 text-sm font-semibold tracking-[0.15em] uppercase transition-colors duration-300">
 								Hire Me
 							</span>
-							<span className="absolute inset-0 rounded-lg opacity-0 shadow-[0_0_30px_var(--neon-magenta)] transition-all duration-500 group-hover:opacity-100" />
+							<span className="shadow-accent/30 absolute inset-0 rounded-lg opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:shadow-lg" />
 						</Link>
 					</div>
 
 					<button onClick={() => setIsOpen(!isOpen)} className="group relative p-3 md:hidden">
-						<span className="absolute inset-0 rounded-lg border border-[var(--neon-cyan)]/30 transition-all duration-300 group-hover:border-[var(--neon-cyan)] group-hover:shadow-[0_0_20px_var(--neon-cyan)]" />
+						<span className="border-primary/30 group-hover:border-primary group-hover:shadow-primary/30 absolute inset-0 rounded-lg border transition-all duration-300 group-hover:shadow-lg" />
 						{isOpen ? (
-							<XIcon className="relative z-10 h-6 w-6 text-[var(--neon-cyan)]" />
+							<XIcon className="text-primary relative z-10 h-6 w-6" />
 						) : (
-							<MenuIcon className="relative z-10 h-6 w-6 text-[var(--neon-cyan)]" />
+							<MenuIcon className="text-primary relative z-10 h-6 w-6" />
 						)}
 					</button>
 				</div>

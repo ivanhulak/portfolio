@@ -1,26 +1,26 @@
 .neon-text-cyan {
-  color: var(--neon-cyan);
-  text-shadow: 0 0 5px var(--neon-cyan), 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan), 0 0 40px var(--neon-cyan);
+  color: var(--color-primary);
+  text-shadow: 0 0 5px var(--color-primary), 0 0 10px var(--color-primary), 0 0 20px var(--color-primary), 0 0 40px var(--color-primary);
 }
 
 .neon-text-magenta {
-  color: var(--neon-magenta);
-  text-shadow: 0 0 5px var(--neon-magenta), 0 0 10px var(--neon-magenta), 0 0 20px var(--neon-magenta), 0 0 40px var(--neon-magenta);
+  color: var(--color-accent);
+  text-shadow: 0 0 5px var(--color-accent), 0 0 10px var(--color-accent), 0 0 20px var(--color-accent), 0 0 40px var(--color-accent);
 }
 
 .neon-text-green {
-  color: var(--neon-green);
-  text-shadow: 0 0 5px var(--neon-green), 0 0 10px var(--neon-green), 0 0 20px var(--neon-green), 0 0 40px var(--neon-green);
+  color: var(--color-success);
+  text-shadow: 0 0 5px var(--color-success), 0 0 10px var(--color-success), 0 0 20px var(--color-success), 0 0 40px var(--color-success);
 }
 
 .neon-border-cyan {
-  border-color: var(--neon-cyan);
-  box-shadow: 0 0 5px var(--neon-cyan), 0 0 10px var(--neon-cyan), inset 0 0 5px rgba(0, 255, 255, 0.1);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 5px var(--color-primary), 0 0 10px var(--color-primary), inset 0 0 5px rgba(0, 255, 255, 0.1);
 }
 
 .neon-border-magenta {
-  border-color: var(--neon-magenta);
-  box-shadow: 0 0 5px var(--neon-magenta), 0 0 10px var(--neon-magenta), inset 0 0 5px rgba(255, 0, 255, 0.1);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 5px var(--color-accent), 0 0 10px var(--color-accent), inset 0 0 5px rgba(255, 0, 255, 0.1);
 }
 
 .glow-card {
@@ -34,7 +34,7 @@
   content: '';
   position: absolute;
   inset: -2px;
-  background: linear-gradient(45deg, var(--neon-cyan), var(--neon-magenta), var(--neon-cyan));
+  background: linear-gradient(45deg, var(--color-primary), var(--color-accent), var(--color-primary));
   border-radius: inherit;
   z-index: -1;
   opacity: 0;
@@ -47,7 +47,7 @@
 }
 
 .glow-card:hover {
-  border-color: var(--neon-cyan);
+  border-color: var(--color-primary);
   transform: translateY(-5px);
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), 0 0 40px rgba(0, 255, 255, 0.1);
 }

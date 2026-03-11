@@ -22,7 +22,7 @@ export function ExperienceSection() {
 
 				<div className="mx-auto max-w-4xl">
 					<div className="relative">
-						<div className="absolute top-0 bottom-0 left-8 w-[2px] bg-gradient-to-b from-[var(--neon-cyan)] via-[var(--neon-magenta)] to-[var(--neon-green)] md:left-1/2 md:-translate-x-1/2" />
+						<div className="from-primary via-accent to-success absolute top-0 bottom-0 left-8 w-[2px] bg-gradient-to-b md:left-1/2 md:-translate-x-1/2" />
 
 						{experiences.map((experience, index) => (
 							<ExperienceTimelineItem

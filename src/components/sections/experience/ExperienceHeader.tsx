@@ -16,14 +16,14 @@ export function ExperienceHeader({ isInView }: TExperienceHeaderProps) {
 				isInView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
 			)}
 		>
-			<div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[var(--neon-magenta)]/30 bg-[var(--neon-magenta)]/5 px-4 py-2">
-				<span className="font-mono text-sm tracking-wider text-[var(--neon-magenta)]">
+			<div className="border-accent/30 bg-accent/5 mb-6 inline-flex items-center gap-2 rounded-full border px-4 py-2">
+				<span className="text-accent font-mono text-sm tracking-wider">
 					{experienceContent.badge}
 				</span>
 			</div>
 			<h2 className="mb-6 text-4xl font-black text-balance md:text-6xl">
 				{experienceContent.titleStart}{' '}
-				<span className="bg-gradient-to-r from-[var(--neon-magenta)] to-[var(--neon-cyan)] bg-clip-text text-transparent">
+				<span className="from-accent to-primary bg-gradient-to-r bg-clip-text text-transparent">
 					{experienceContent.titleAccent}
 				</span>
 			</h2>

@@ -30,7 +30,7 @@ export function BlogPostCard({ post, index, isInView }: TBlogPostCardProps) {
 				transition: `all 0.8s cubic-bezier(0.4, 0, 0.2, 1) ${index * 150}ms`,
 			}}
 		>
-			<div className="h-2 bg-gradient-to-r from-transparent via-[var(--neon-green)] to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+			<div className="via-success h-2 bg-gradient-to-r from-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
 			<div className="p-8">
 				<div className="mb-6">

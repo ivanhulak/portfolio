@@ -20,11 +20,11 @@ export function GlitchText({ text }: TGlitchTextProps) {
 	}, []);
 
 	return (
-		<span className={`relative inline-block ${isGlitching ? 'animate-pulse' : ''}`}>
+		<span className={cn('relative inline-block', isGlitching && 'animate-pulse')}>
 			<span className="neon-text-cyan relative z-10">{text}</span>
 			<span
 				className={cn(
-					'absolute top-0 left-0 z-0 text-[var(--neon-magenta)] opacity-70 transition-transform duration-100',
+					'text-accent absolute top-0 left-0 z-0 opacity-70 transition-transform duration-100',
 					{
 						'-translate-x-[3px] translate-y-[3px]': isGlitching,
 					}
@@ -35,7 +35,7 @@ export function GlitchText({ text }: TGlitchTextProps) {
 			</span>
 			<span
 				className={cn(
-					'absolute top-0 left-0 z-0 text-[var(--neon-cyan)] opacity-70 transition-transform duration-100',
+					'text-primary absolute top-0 left-0 z-0 opacity-70 transition-transform duration-100',
 					{
 						'translate-x-[3px] -translate-y-[3px]': isGlitching,
 					}
