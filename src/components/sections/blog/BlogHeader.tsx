@@ -16,14 +16,12 @@ export function BlogHeader({ isInView }: TBlogHeaderProps) {
 				isInView ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
 			)}
 		>
-			<div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[var(--neon-green)]/30 bg-[var(--neon-green)]/5 px-4 py-2">
-				<span className="font-mono text-sm tracking-wider text-[var(--neon-green)]">
-					{blogContent.badge}
-				</span>
+			<div className="border-success/30 bg-success/5 mb-6 inline-flex items-center gap-2 rounded-full border px-4 py-2">
+				<span className="text-success font-mono text-sm tracking-wider">{blogContent.badge}</span>
 			</div>
 			<h2 className="mb-6 text-4xl font-black text-balance md:text-6xl">
 				{blogContent.titleStart}{' '}
-				<span className="bg-gradient-to-r from-[var(--neon-green)] to-[var(--neon-cyan)] bg-clip-text text-transparent">
+				<span className="from-success to-primary bg-gradient-to-r bg-clip-text text-transparent">
 					{blogContent.titleAccent}
 				</span>
 			</h2>

@@ -39,8 +39,10 @@ export function ExperienceTimelineItem({
 				)}
 			>
 				<div
-					className="absolute inset-0 animate-ping rounded-full opacity-30"
-					style={{ backgroundColor: colors.pingBackground }}
+					className={cn(
+						'absolute inset-0 animate-ping rounded-full opacity-30',
+						colors.pingBackgroundClass
+					)}
 				/>
 			</div>
 

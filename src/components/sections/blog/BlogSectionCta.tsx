@@ -20,7 +20,11 @@ export function BlogSectionCta({ isInView }: TBlogSectionCtaProps) {
 		>
 			<Link
 				href={blogContent.ctaHref}
-				className="group inline-flex items-center gap-3 rounded-xl border border-[var(--neon-green)]/30 bg-[var(--neon-green)]/5 px-8 py-4 font-semibold tracking-wider text-[var(--neon-green)] uppercase transition-all duration-500 hover:border-[var(--neon-green)]/50 hover:bg-[var(--neon-green)]/10 hover:shadow-[0_0_30px_rgba(0,255,136,0.2)]"
+				className={cn(
+					'group inline-flex items-center gap-3 rounded-xl border px-8 py-4 font-semibold tracking-wider uppercase transition-all duration-500',
+					'border-success/30 bg-success/5 text-success',
+					'hover:border-success/50 hover:bg-success/10 hover:shadow-success/20 hover:shadow-lg'
+				)}
 			>
 				{blogContent.ctaLabel}
 				<span className="transition-transform duration-300 group-hover:translate-x-2">-&gt;</span>

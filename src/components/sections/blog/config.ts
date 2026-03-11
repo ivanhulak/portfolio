@@ -10,26 +10,26 @@ export const blogContent = {
 } as const;
 
 export const blogColorStyles = {
-	cyan: {
-		badge: 'bg-[var(--neon-cyan)]/10 text-[var(--neon-cyan)] border-[var(--neon-cyan)]/30',
-		hoverText: 'group-hover:text-[var(--neon-cyan)]',
-		border: 'hover:border-[var(--neon-cyan)]/50',
-		glow: 'group-hover:shadow-[0_0_30px_rgba(0,255,255,0.15)]',
-		link: 'text-[var(--neon-cyan)]',
+	primary: {
+		badge: 'border-primary/30 bg-primary/10 text-primary',
+		hoverText: 'group-hover:text-primary',
+		border: 'hover:border-primary/50',
+		glow: 'group-hover:shadow-lg group-hover:shadow-primary/20',
+		link: 'text-primary',
 	},
-	magenta: {
-		badge: 'bg-[var(--neon-magenta)]/10 text-[var(--neon-magenta)] border-[var(--neon-magenta)]/30',
-		hoverText: 'group-hover:text-[var(--neon-magenta)]',
-		border: 'hover:border-[var(--neon-magenta)]/50',
-		glow: 'group-hover:shadow-[0_0_30px_rgba(255,0,255,0.15)]',
-		link: 'text-[var(--neon-magenta)]',
+	accent: {
+		badge: 'border-accent/30 bg-accent/10 text-accent',
+		hoverText: 'group-hover:text-accent',
+		border: 'hover:border-accent/50',
+		glow: 'group-hover:shadow-lg group-hover:shadow-accent/20',
+		link: 'text-accent',
 	},
-	green: {
-		badge: 'bg-[var(--neon-green)]/10 text-[var(--neon-green)] border-[var(--neon-green)]/30',
-		hoverText: 'group-hover:text-[var(--neon-green)]',
-		border: 'hover:border-[var(--neon-green)]/50',
-		glow: 'group-hover:shadow-[0_0_30px_rgba(0,255,136,0.15)]',
-		link: 'text-[var(--neon-green)]',
+	success: {
+		badge: 'border-success/30 bg-success/10 text-success',
+		hoverText: 'group-hover:text-success',
+		border: 'hover:border-success/50',
+		glow: 'group-hover:shadow-lg group-hover:shadow-success/20',
+		link: 'text-success',
 	},
 } as const;
 
@@ -54,7 +54,7 @@ export const blogPosts: readonly TBlogPost[] = [
 		readTime: '8 min',
 		category: 'React',
 		slug: 'scalable-react-apps',
-		color: 'cyan',
+		color: 'primary',
 	},
 	{
 		title: 'The Future of Server Components',
@@ -64,7 +64,7 @@ export const blogPosts: readonly TBlogPost[] = [
 		readTime: '6 min',
 		category: 'Next.js',
 		slug: 'server-components-future',
-		color: 'magenta',
+		color: 'accent',
 	},
 	{
 		title: 'TypeScript Best Practices for Frontend',
@@ -74,6 +74,6 @@ export const blogPosts: readonly TBlogPost[] = [
 		readTime: '10 min',
 		category: 'TypeScript',
 		slug: 'typescript-best-practices',
-		color: 'green',
+		color: 'success',
 	},
 ] as const;

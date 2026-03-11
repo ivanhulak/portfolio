@@ -16,7 +16,7 @@ export const MobileMenu = ({ isOpen, setIsOpen }: TProps) => {
 	return (
 		<div
 			className={cn(
-				'absolute top-full right-0 left-0 overflow-hidden border-b border-[var(--neon-cyan)]/20 bg-[#050508]/98 backdrop-blur-xl transition-all duration-500 ease-out md:hidden',
+				'border-primary/20 bg-background/98 absolute top-full right-0 left-0 overflow-hidden border-b backdrop-blur-xl transition-all duration-500 ease-out md:hidden',
 				isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
 			)}
 		>
@@ -35,7 +35,7 @@ export const MobileMenu = ({ isOpen, setIsOpen }: TProps) => {
 					<Link
 						href="#contact"
 						onClick={() => setIsOpen(false)}
-						className="block rounded-lg border border-[var(--neon-magenta)] py-4 text-center text-sm font-semibold tracking-[0.2em] text-[var(--neon-magenta)] uppercase transition-all duration-300 hover:bg-[var(--neon-magenta)]/10 hover:shadow-[0_0_30px_var(--neon-magenta)]"
+						className="border-accent text-accent hover:bg-accent/10 hover:shadow-accent/30 block rounded-lg border py-4 text-center text-sm font-semibold tracking-[0.2em] uppercase transition-all duration-300 hover:shadow-lg"
 					>
 						Hire Me
 					</Link>
