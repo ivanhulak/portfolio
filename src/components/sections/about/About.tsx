@@ -4,11 +4,11 @@ import { useRef } from 'react';
 
 import { useInView } from '@/hooks/useInView';
 
-import { AboutBackground } from './components/AboutBackground';
-import { AboutHeader } from './components/AboutHeader';
-import { AboutStory } from './components/AboutStory';
-import { AboutTechStats } from './components/AboutTechStats';
-import { SkillsGrid } from './components/SkillsGrid';
+import { AboutBackground } from './AboutBackground';
+import { AboutHeader } from './AboutHeader';
+import { AboutStory } from './AboutStory';
+import { AboutTechStats } from './AboutTechStats';
+import { SkillsGrid } from './SkillsGrid';
 
 export function AboutSection() {
 	const sectionRef = useRef<HTMLElement>(null);

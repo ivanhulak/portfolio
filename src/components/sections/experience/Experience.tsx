@@ -4,10 +4,10 @@ import { useRef } from 'react';
 
 import { useInView } from '@/hooks/useInView';
 
-import { ExperienceBackground } from './components/ExperienceBackground';
-import { ExperienceHeader } from './components/ExperienceHeader';
-import { ExperienceTimelineItem } from './components/ExperienceTimelineItem';
 import { experiences } from './config';
+import { ExperienceBackground } from './ExperienceBackground';
+import { ExperienceHeader } from './ExperienceHeader';
+import { ExperienceTimelineItem } from './ExperienceTimelineItem';
 
 export function ExperienceSection() {
 	const sectionRef = useRef<HTMLElement>(null);

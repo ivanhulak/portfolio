@@ -2,7 +2,7 @@
 
 import { cn } from '@/lib/utils';
 
-import { experienceContent } from '../config';
+import { experienceContent } from './config';
 
 type TExperienceHeaderProps = {
 	isInView: boolean;

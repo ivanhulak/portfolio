@@ -2,7 +2,7 @@
 
 import { AnimatedCounter } from '@/components/common/AnimatedCounter';
 
-import { aboutContent, aboutStats, aboutTechnologies } from '../config';
+import { aboutContent, aboutStats, aboutTechnologies } from './config';
 
 type TAboutTechStatsProps = {
 	isInView: boolean;
