@@ -14,3 +14,6 @@ export { default as TerminalIcon } from './terminal.svg';
 export { default as CalendarIcon } from './calendar.svg';
 export { default as MapPinIcon } from './map-pin.svg';
 export { default as BriefcaseIcon } from './briefcase.svg';
+export { default as InstagramIcon } from './instagram.svg';
+export { default as ArrowUpRightIcon } from './arrow-up-right.svg';
+export { default as SparklesIcon } from './sparkles.svg';
