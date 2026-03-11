@@ -1,6 +1,6 @@
 'use client';
 
-import { aboutSkillColorClasses, aboutSkills } from '../config';
+import { aboutSkillColorClasses, aboutSkills } from './config';
 
 type TSkillsGridProps = {
 	isInView: boolean;

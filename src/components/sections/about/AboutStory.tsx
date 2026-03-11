@@ -1,6 +1,6 @@
 'use client';
 
-import { aboutContent } from '../config';
+import { aboutContent } from './config';
 
 type TAboutStoryProps = {
 	isInView: boolean;

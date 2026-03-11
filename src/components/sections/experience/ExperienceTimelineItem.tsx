@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 
 import { BriefcaseIcon, CalendarIcon, MapPinIcon } from '@/assets/icons';
 
-import { experienceColorStyles, type TExperience } from '../config';
+import { experienceColorStyles, type TExperience } from './config';
 
 type TExperienceTimelineItemProps = {
 	experience: TExperience;
