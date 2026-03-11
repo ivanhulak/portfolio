@@ -1,9 +1,9 @@
-export type TNavItemConfig = {
+export type THeaderLink = {
 	name: string;
 	href: string;
 };
 
-export const navItems: TNavItemConfig[] = [
+export const headerLinks: THeaderLink[] = [
 	{ name: 'About', href: '#about' },
 	{ name: 'Experience', href: '#experience' },
 	{ name: 'Projects', href: '#projects' },

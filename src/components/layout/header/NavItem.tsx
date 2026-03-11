@@ -2,10 +2,10 @@ import Link from 'next/link';
 
 import { cn } from '@/lib/utils';
 
-import type { TNavItemConfig } from './config';
+import type { THeaderLink } from './config';
 
 type TNavItemProps = {
-	item: TNavItemConfig;
+	item: THeaderLink;
 	activeSection?: string;
 	mobile?: boolean;
 	onClick?: () => void;
