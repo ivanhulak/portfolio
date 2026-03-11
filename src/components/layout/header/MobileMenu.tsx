@@ -1,18 +1,17 @@
 import { Dispatch, SetStateAction } from 'react';
 
-import Link from 'next/link';
-
 import { cn } from '@/lib/utils';
 
-import { navItems } from './config';
+import { headerLinks } from './config';
+import { HeaderAction } from './HeaderAction';
 import { NavItem } from './NavItem';
 
-type TProps = {
+type TMobileMenuProps = {
 	isOpen: boolean;
 	setIsOpen: Dispatch<SetStateAction<boolean>>;
 };
 
-export const MobileMenu = ({ isOpen, setIsOpen }: TProps) => {
+export const MobileMenu = ({ isOpen, setIsOpen }: TMobileMenuProps) => {
 	return (
 		<div
 			className={cn(
@@ -21,7 +20,7 @@ export const MobileMenu = ({ isOpen, setIsOpen }: TProps) => {
 			)}
 		>
 			<div className="space-y-2 px-6 py-6">
-				{navItems.map((item, index) => (
+				{headerLinks.map((item, index) => (
 					<NavItem
 						key={item.name}
 						item={item}
@@ -32,13 +31,7 @@ export const MobileMenu = ({ isOpen, setIsOpen }: TProps) => {
 					/>
 				))}
 				<div className="pt-4">
-					<Link
-						href="#contact"
-						onClick={() => setIsOpen(false)}
-						className="border-accent text-accent hover:bg-accent/10 hover:shadow-accent/30 block rounded-lg border py-4 text-center text-sm font-semibold tracking-[0.2em] uppercase transition-all duration-300 hover:shadow-lg"
-					>
-						Hire Me
-					</Link>
+					<HeaderAction mobile onClick={() => setIsOpen(false)} />
 				</div>
 			</div>
 		</div>
