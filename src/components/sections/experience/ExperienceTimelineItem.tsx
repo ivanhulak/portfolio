@@ -19,6 +19,7 @@ export function ExperienceTimelineItem({
 }: TExperienceTimelineItemProps) {
 	const isEven = index % 2 === 0;
 	const colors = experienceColorStyles[experience.color];
+	const isFeatured = Boolean(experience.featured);
 
 	return (
 		<div
@@ -50,10 +51,16 @@ export function ExperienceTimelineItem({
 				<div
 					className={cn(
 						'group bg-card/80 border-border rounded-2xl border p-8 backdrop-blur-sm transition-all duration-500',
+						isFeatured && 'ring-primary/25 bg-primary/5 ring-1',
 						colors.border,
 						colors.glow
 					)}
 				>
+					{isFeatured ? (
+						<div className="border-primary/30 bg-primary/10 text-primary mb-4 inline-flex rounded-full border px-3 py-1 font-mono text-xs tracking-[0.2em] uppercase">
+							Latest role
+						</div>
+					) : null}
 					<div className={cn('mb-4 flex flex-wrap items-center gap-3', isEven && 'md:justify-end')}>
 						<div className={cn('flex items-center gap-2', colors.text)}>
 							<CalendarIcon className="size-3.5" />

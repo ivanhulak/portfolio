@@ -6,7 +6,7 @@ export function FooterBrand() {
 	return (
 		<div className="text-center md:text-left">
 			<Link href="/" className="group inline-block">
-				<span className="group-hover:animate-text-shimmer bg-gradient-to-r from-[var(--neon-cyan)] via-[var(--neon-magenta)] to-[var(--neon-cyan)] bg-[length:200%_auto] bg-clip-text text-3xl font-black tracking-wider text-transparent">
+				<span className="group-hover:animate-text-shimmer via-neon-magenta-soft to-neon-cyan-soft from-neon-cyan-soft bg-gradient-to-r bg-[length:200%_auto] bg-clip-text text-3xl font-black tracking-wider text-transparent">
 					{footerMeta.brandName}
 				</span>
 			</Link>

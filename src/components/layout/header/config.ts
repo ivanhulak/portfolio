@@ -6,7 +6,6 @@ export type THeaderLink = {
 export const headerLinks: THeaderLink[] = [
 	{ name: 'About', href: '#about' },
 	{ name: 'Experience', href: '#experience' },
-	{ name: 'Projects', href: '#projects' },
-	{ name: 'Blog', href: '#blog' },
+	{ name: 'Highlights', href: '#blog' },
 	{ name: 'Contact', href: '#contact' },
 ];

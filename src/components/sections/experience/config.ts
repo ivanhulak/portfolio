@@ -1,9 +1,9 @@
 export const experienceContent = {
 	badge: '// EXPERIENCE',
-	titleStart: 'My Professional',
-	titleAccent: 'Journey',
+	titleStart: 'Professional',
+	titleAccent: 'Experience',
 	description:
-		'A timeline of growth, learning, and building amazing products with incredible teams.',
+		'A progression from freelance delivery to senior frontend ownership, with the strongest growth happening in my most recent role.',
 } as const;
 
 export const experienceColorStyles = {
@@ -43,37 +43,110 @@ export type TExperience = {
 	description: string;
 	technologies: readonly string[];
 	color: TExperienceColor;
+	featured?: boolean;
 };
 
 export const experiences: readonly TExperience[] = [
 	{
-		role: 'Senior Frontend Developer',
-		company: 'Test Inc.',
-		location: 'Remote',
-		period: '2023 - Present',
+		role: 'Senior Lead Frontend Developer',
+		company: 'Under NDA',
+		location: 'Ukraine',
+		period: 'September 2024 - February 2026',
 		description:
-			'Leading frontend architecture decisions, implementing scalable React patterns, and mentoring a team of 5 developers. Reduced bundle size by 40% and improved Core Web Vitals scores.',
-		technologies: ['React', 'Next.js', 'TypeScript', 'GraphQL', 'Tailwind'],
+			'Took ownership of frontend architecture for high-load iGaming and case-opening platforms, building core user flows, internal dashboards, streamer widgets, provider integrations, and real-time transactional experiences.',
+		technologies: [
+			'React',
+			'Next.js',
+			'TypeScript',
+			'TanStack Query',
+			'Zustand',
+			'Socket.io',
+			'Tailwind CSS',
+			'Framer Motion',
+			'Radix UI',
+		],
 		color: 'primary',
+		featured: true,
 	},
 	{
-		role: 'Senior Frontend Developer',
-		company: 'Test Inc.',
-		location: 'Remote',
-		period: '2023 - Present',
+		role: 'Middle Fullstack Developer',
+		company: 'TimeMobile',
+		location: 'Ukraine',
+		period: 'November 2023 - September 2024',
 		description:
-			'Leading frontend architecture decisions, implementing scalable React patterns, and mentoring a team of 5 developers. Reduced bundle size by 40% and improved Core Web Vitals scores.',
-		technologies: ['React', 'Next.js', 'TypeScript', 'GraphQL', 'Tailwind'],
-		color: 'primary',
+			'Worked across multiple client products, from the Picnic ecosystem to an AI chat-analysis platform and startup landing pages, delivering new features, production fixes, and full product slices across web and mobile.',
+		technologies: [
+			'React',
+			'React Native',
+			'Next.js',
+			'TypeScript',
+			'Tailwind CSS',
+			'Tanstack Query',
+			'OpenAI',
+			'MongoDB',
+			'Vercel',
+		],
+		color: 'accent',
 	},
 	{
-		role: 'Senior Frontend Developer',
-		company: 'Test Inc.',
-		location: 'Remote',
-		period: '2023 - Present',
+		role: 'Senior Lead Frontend Developer',
+		company: 'GBMemories Inc',
+		location: 'Ukraine',
+		period: 'January 2023 - October 2023',
 		description:
-			'Leading frontend architecture decisions, implementing scalable React patterns, and mentoring a team of 5 developers. Reduced bundle size by 40% and improved Core Web Vitals scores.',
-		technologies: ['React', 'Next.js', 'TypeScript', 'GraphQL', 'Tailwind'],
+			'Led frontend development and built a CRM system from scratch for memorial content production, including submissions, media management, collaboration flows, and region-spanning workflow tools for multiple roles.',
+		technologies: [
+			'React',
+			'Next.js',
+			'TypeScript',
+			'TanStack Query',
+			'React Hook Form',
+			'Material UI',
+			'Zod',
+			'Next-Intl',
+			'Next Auth',
+			'Socket.io',
+		],
+		color: 'success',
+	},
+	{
+		role: 'Frontend Developer',
+		company: 'Freelance',
+		location: 'Ukraine',
+		period: 'November 2020 - March 2023',
+		description:
+			'Delivered client-facing web products including a new B2B system for EDG Group, startup landing pages, and e-commerce work while collaborating directly with stakeholders and shipping production-ready solutions.',
+		technologies: [
+			'React',
+			'Next.js',
+			'Nuxt',
+			'Svelte',
+			'TypeScript',
+			'TanStack Query',
+			'SCSS',
+			'Webpack',
+			'Gulp',
+		],
+		color: 'accent',
+	},
+	{
+		role: 'Junior Frontend Developer',
+		company: 'Olimp Digital',
+		location: 'Ukraine',
+		period: 'March 2021 - December 2022',
+		description:
+			'Implemented frontend tasks, bug fixes, and UI improvements for multiple organizations, including defense-related platforms such as army.gov.ua and reserveplus.mod.gov.ua, with a focus on stability and performance.',
+		technologies: [
+			'React',
+			'Next.js',
+			'MUI',
+			'AntDesign',
+			'TypeScript',
+			'Redux Toolkit',
+			'REST API',
+			'SCSS',
+			'i18n',
+		],
 		color: 'primary',
 	},
 ] as const;

@@ -23,7 +23,12 @@ export function BlogSection() {
 
 				<div className="mb-16 grid gap-8 md:grid-cols-3">
 					{blogPosts.map((post, index) => (
-						<BlogPostCard key={post.slug} post={post} index={index} isInView={isInView} />
+						<BlogPostCard
+							key={post.href + post.title}
+							post={post}
+							index={index}
+							isInView={isInView}
+						/>
 					))}
 				</div>
 

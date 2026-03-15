@@ -1,31 +1,31 @@
-import { GithubIcon, linkedinIcon, MailIcon, SendIcon } from '@/assets/icons';
+import { BriefcaseIcon, MailIcon, MapPinIcon, SendIcon } from '@/assets/icons';
 
 export const heroRoles = [
-	'Senior Frontend Developer',
-	'React Specialist',
-	'UI/UX Enthusiast',
-	'Performance Expert',
-	'Code Craftsman',
+	'Senior Lead Frontend Developer',
+	'React & Next.js Engineer',
+	'High-Load Product Builder',
+	'Frontend Architecture Owner',
+	'Complex UX Systems Specialist',
 ];
 
 export const heroContent = {
-	status: 'AVAILABLE FOR HIRE',
+	status: 'OPEN TO NEW OPPORTUNITIES',
 	greeting: 'Hello, I am',
-	name: 'IVENGO',
+	name: 'IVAN HULAK',
 	description:
-		'Crafting exceptional digital experiences with cutting-edge technologies. Turning complex problems into elegant, performant solutions.',
+		'Senior Lead Frontend Developer with 6 years of experience building scalable React and Next.js products, from UI foundations to performance-critical business flows.',
 	primaryCta: {
-		href: '#projects',
-		label: 'View Projects',
+		href: '#experience',
+		label: 'See Experience',
 	},
 	secondaryCta: {
 		href: '#contact',
-		label: "Let's Talk",
+		label: "Let's Work Together",
 	},
 	scrollLabel: 'Explore',
 	image: {
 		src: '/images/brand-hero.png',
-		alt: 'IVENGO - Senior Frontend Developer',
+		alt: 'Ivan Hulak - Senior Lead Frontend Developer',
 		width: 550,
 		height: 440,
 	},
@@ -33,28 +33,28 @@ export const heroContent = {
 
 export const heroSocialLinks = [
 	{
-		icon: GithubIcon,
-		href: 'https://github.com',
-		label: 'GitHub',
-		colorClass: 'hover:text-primary hover:shadow-lg hover:shadow-primary/30',
-	},
-	{
-		icon: linkedinIcon,
-		href: 'https://linkedin.com',
-		label: 'LinkedIn',
-		colorClass: 'hover:text-primary hover:shadow-lg hover:shadow-primary/30',
+		icon: MailIcon,
+		href: 'mailto:dev.ivanhulak@gmail.com',
+		label: 'Email',
+		colorClass: 'hover:text-success hover:shadow-lg hover:shadow-success/30',
 	},
 	{
 		icon: SendIcon,
-		href: 'https://t.me',
-		label: 'Telegram',
+		href: 'tel:+380970625705',
+		label: 'Phone',
 		colorClass: 'hover:text-accent hover:shadow-lg hover:shadow-accent/30',
 	},
 	{
-		icon: MailIcon,
-		href: 'mailto:hello@ivengo.dev',
-		label: 'Email',
-		colorClass: 'hover:text-success hover:shadow-lg hover:shadow-success/30',
+		icon: MapPinIcon,
+		href: 'https://maps.google.com/?q=Zhytomyr,Ukraine',
+		label: 'Zhytomyr, Ukraine',
+		colorClass: 'hover:text-primary hover:shadow-lg hover:shadow-primary/30',
+	},
+	{
+		icon: BriefcaseIcon,
+		href: '#experience',
+		label: 'Experience',
+		colorClass: 'hover:text-primary hover:shadow-lg hover:shadow-primary/30',
 	},
 ] as const;
 
@@ -70,7 +70,7 @@ type THeroBadge = {
 
 export const heroBadges: readonly THeroBadge[] = [
 	{
-		title: '5+ Years',
+		title: '6+ Years',
 		subtitle: 'Experience',
 		textClass: 'text-primary',
 		borderClass: 'border-primary/40',
@@ -78,8 +78,8 @@ export const heroBadges: readonly THeroBadge[] = [
 		positionClass: 'top-1/4 -left-6',
 	},
 	{
-		title: '15+ Projects',
-		subtitle: 'Delivered',
+		title: '5 Roles',
+		subtitle: 'Across Teams',
 		textClass: 'text-accent',
 		borderClass: 'border-accent/40',
 		shadowClass: 'shadow-lg shadow-accent/20',
@@ -87,8 +87,8 @@ export const heroBadges: readonly THeroBadge[] = [
 		style: { animationDelay: '-2s' },
 	},
 	{
-		title: '100% Remote',
-		subtitle: 'Worldwide',
+		title: 'React / Next.js',
+		subtitle: 'Core Stack',
 		textClass: 'text-success',
 		borderClass: 'border-success/40',
 		shadowClass: 'shadow-lg shadow-success/20',

@@ -44,7 +44,7 @@ export function BlogPostCard({ post, index, isInView }: TBlogPostCardProps) {
 					</span>
 				</div>
 
-				<Link href={`/blog/${post.slug}`}>
+				<Link href={post.href}>
 					<h3
 						className={cn(
 							'text-foreground mb-4 text-xl leading-snug font-bold transition-colors duration-300',
@@ -69,7 +69,7 @@ export function BlogPostCard({ post, index, isInView }: TBlogPostCardProps) {
 				</div>
 
 				<Link
-					href={`/blog/${post.slug}`}
+					href={post.href}
 					className={cn(
 						'group/link inline-flex items-center gap-2 text-sm font-semibold',
 						colors.link

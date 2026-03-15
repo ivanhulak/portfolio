@@ -1,12 +1,12 @@
 export const blogContent = {
-	badge: '// BLOG',
-	titleStart: 'Latest',
-	titleAccent: 'Articles',
+	badge: '// HIGHLIGHTS',
+	titleStart: 'Selected',
+	titleAccent: 'Highlights',
 	description:
-		'Thoughts on frontend development, technology trends, and lessons learned from building web applications.',
-	ctaLabel: 'View All Articles',
-	ctaHref: '/blog',
-	cardCtaLabel: 'Read Article',
+		'Key themes from my experience: architecture ownership, operational tooling, and shipping products with real business complexity.',
+	ctaLabel: 'View Full Experience',
+	ctaHref: '#experience',
+	cardCtaLabel: 'Explore',
 } as const;
 
 export const blogColorStyles = {
@@ -41,39 +41,39 @@ export type TBlogPost = {
 	date: string;
 	readTime: string;
 	category: string;
-	slug: string;
+	href: string;
 	color: TBlogColor;
 };
 
 export const blogPosts: readonly TBlogPost[] = [
 	{
-		title: 'Building Scalable React Applications in 2026',
+		title: 'Owned frontend architecture for a high-load product ecosystem',
 		excerpt:
-			'Learn the patterns and practices for building React applications that scale. From state management to component architecture.',
-		date: 'Mar 5, 2026',
-		readTime: '8 min',
-		category: 'React',
-		slug: 'scalable-react-apps',
+			'Structured projects with modular architecture and Feature-Sliced Design, led technical decisions, and kept delivery aligned with backend, product, and design teams.',
+		date: '2024 - 2026',
+		readTime: 'Architecture',
+		category: 'Leadership',
+		href: '#experience',
 		color: 'primary',
 	},
 	{
-		title: 'The Future of Server Components',
+		title: 'Built user-facing and internal systems that carried real operations',
 		excerpt:
-			'Exploring React Server Components and how they change the way we think about building web applications.',
-		date: 'Feb 28, 2026',
-		readTime: '6 min',
-		category: 'Next.js',
-		slug: 'server-components-future',
+			'Created dashboards, moderation tools, CRM workflows, B2B interfaces, marketplaces, and transactional flows for both customers and internal teams.',
+		date: '2021 - 2026',
+		readTime: 'Product systems',
+		category: 'Delivery',
+		href: '#experience',
 		color: 'accent',
 	},
 	{
-		title: 'TypeScript Best Practices for Frontend',
+		title: 'Worked across a broad modern stack without losing maintainability',
 		excerpt:
-			'Essential TypeScript patterns that will make your code more maintainable and type-safe.',
-		date: 'Feb 15, 2026',
-		readTime: '10 min',
-		category: 'TypeScript',
-		slug: 'typescript-best-practices',
+			'Shipped with React, Next.js, TypeScript Tailwinds CSS, TanStack Query, Zustand, Socket.io, Radix UI and other staff depending on the product.',
+		date: 'Core stack',
+		readTime: 'Execution',
+		category: 'Technology',
+		href: '#about',
 		color: 'success',
 	},
 ] as const;

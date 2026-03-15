@@ -1,8 +1,10 @@
+import type { FC, SVGProps } from 'react';
+
 import {
 	ArrowUpRightIcon,
-	InstagramIcon,
-	linkedinIcon,
+	BriefcaseIcon,
 	MailIcon,
+	MapPinIcon,
 	SendIcon,
 	SparklesIcon,
 } from '@/assets/icons';
@@ -12,11 +14,11 @@ export const contactContent = {
 	titleStart: "Let's Work",
 	titleAccent: 'Together',
 	description:
-		"Have a project in mind or want to collaborate? Let's create something amazing together.",
-	ctaTitle: 'Ready to start your next project?',
+		'I’m open to senior frontend roles, product teams, and complex web platforms where architecture and delivery both matter.',
+	ctaTitle: 'Have a product that needs strong frontend ownership?',
 	ctaDescription:
-		"I'm currently available for freelance work and exciting opportunities. Drop me a message and let's discuss how I can help bring your ideas to life.",
-	ctaHref: 'mailto:contact@ivengo.dev',
+		"Let's talk if you need someone who can take responsibility for architecture, execution, and the details that make frontend systems reliable at scale.",
+	ctaHref: 'mailto:dev.ivanhulak@gmail.com',
 	ctaLabel: 'Send Me an Email',
 } as const;
 
@@ -52,7 +54,7 @@ export type TContactSocialColor = keyof typeof contactSocialColorStyles;
 export type TContactSocialLink = {
 	name: string;
 	href: string;
-	icon: typeof SendIcon;
+	icon: FC<SVGProps<SVGSVGElement>>;
 	username: string;
 	color: TContactSocialColor;
 	isExternal?: boolean;
@@ -60,34 +62,32 @@ export type TContactSocialLink = {
 
 export const contactSocialLinks: readonly TContactSocialLink[] = [
 	{
-		name: 'Telegram',
-		href: 'https://t.me/',
-		icon: SendIcon,
-		username: '@ivengo',
-		color: 'primary',
-		isExternal: true,
-	},
-	{
-		name: 'LinkedIn',
-		href: 'https://linkedin.com/in/',
-		icon: linkedinIcon,
-		username: 'IVENGO',
-		color: 'primary',
-		isExternal: true,
-	},
-	{
-		name: 'Instagram',
-		href: 'https://instagram.com/',
-		icon: InstagramIcon,
-		username: '@ivengo.dev',
-		color: 'accent',
-		isExternal: true,
-	},
-	{
 		name: 'Email',
-		href: 'mailto:contact@ivengo.dev',
+		href: 'mailto:dev.ivanhulak@gmail.com',
 		icon: MailIcon,
-		username: 'contact@ivengo.dev',
+		username: 'dev.ivanhulak@gmail.com',
+		color: 'primary',
+	},
+	{
+		name: 'Phone',
+		href: 'tel:+380970625705',
+		icon: SendIcon,
+		username: '+380 97 062 57 05',
+		color: 'accent',
+	},
+	{
+		name: 'Location',
+		href: 'https://maps.google.com/?q=Zhytomyr,Ukraine',
+		icon: MapPinIcon,
+		username: 'Zhytomyr, Ukraine',
 		color: 'success',
+		isExternal: true,
+	},
+	{
+		name: 'Current Focus',
+		href: '#experience',
+		icon: BriefcaseIcon,
+		username: 'Senior frontend ownership',
+		color: 'primary',
 	},
 ] as const;
