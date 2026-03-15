@@ -9,7 +9,7 @@ export function FooterLinks() {
 				<Link
 					key={link.href}
 					href={link.href}
-					className="text-muted-foreground text-sm transition-all duration-300 hover:text-[var(--neon-cyan)] hover:drop-shadow-[0_0_8px_var(--neon-cyan)]"
+					className="text-muted-foreground hover:text-neon-cyan-soft text-sm transition-all duration-300 hover:drop-shadow-[0_0_8px_var(--neon-cyan-soft)]"
 				>
 					{link.label}
 				</Link>

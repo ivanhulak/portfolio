@@ -1,6 +1,6 @@
 import type { FC, SVGProps } from 'react';
 
-import { GithubIcon, InstagramIcon, linkedinIcon, MailIcon, SendIcon } from '@/assets/icons';
+import { BriefcaseIcon, MailIcon, MapPinIcon, SendIcon } from '@/assets/icons';
 
 export type TFooterLink = {
 	href: string;
@@ -15,22 +15,25 @@ export type TFooterSocialLink = TFooterLink & {
 export const footerLinks: TFooterLink[] = [
 	{ href: '#about', label: 'About' },
 	{ href: '#experience', label: 'Experience' },
-	{ href: '#projects', label: 'Projects' },
-	{ href: '#blog', label: 'Blog' },
+	{ href: '#blog', label: 'Highlights' },
 	{ href: '#contact', label: 'Contact' },
 ];
 
 export const footerSocialLinks: TFooterSocialLink[] = [
-	{ href: 'https://t.me/', icon: SendIcon, label: 'Telegram', external: true },
-	{ href: 'https://linkedin.com/', icon: linkedinIcon, label: 'LinkedIn', external: true },
-	{ href: 'https://instagram.com/', icon: InstagramIcon, label: 'Instagram', external: true },
-	{ href: 'https://github.com/', icon: GithubIcon, label: 'GitHub', external: true },
-	{ href: 'mailto:contact@ivengo.dev', icon: MailIcon, label: 'Email' },
+	{ href: 'mailto:dev.ivanhulak@gmail.com', icon: MailIcon, label: 'Email' },
+	{ href: 'tel:+380970625705', icon: SendIcon, label: 'Phone' },
+	{
+		href: 'https://maps.google.com/?q=Zhytomyr,Ukraine',
+		icon: MapPinIcon,
+		label: 'Location',
+		external: true,
+	},
+	{ href: '#experience', icon: BriefcaseIcon, label: 'Experience' },
 ];
 
 export const footerMeta = {
-	description: 'Senior Frontend Developer',
-	tagline: 'Crafting digital experiences',
+	description: 'Senior Lead Frontend Developer',
+	tagline: 'Building scalable frontend systems',
 	techStack: 'Next.js + Tailwind CSS + TypeScript',
-	brandName: 'IVENGO',
+	brandName: 'IVAN HULAK',
 };

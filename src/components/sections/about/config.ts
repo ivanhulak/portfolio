@@ -9,16 +9,16 @@ import {
 
 export const aboutContent = {
 	badge: '// ABOUT ME',
-	titleStart: 'Passionate About',
-	titleAccent: 'Digital Excellence',
+	titleStart: 'Building',
+	titleAccent: 'Reliable Frontends',
 	description:
-		'With years of experience in frontend development, I specialize in building exceptional web applications that combine stunning design with robust functionality.',
+		'I build scalable frontend systems for products with real operational complexity, combining maintainable architecture, product thinking, and polished user experience.',
 	journeyTitleStart: 'My Journey in',
 	journeyTitleAccent: 'Tech',
 	storyParagraphs: [
-		'My journey into web development began with a fascination for how technology can transform ideas into interactive experiences. What started as curiosity quickly evolved into a deep passion for crafting digital solutions.',
-		"I've had the privilege of working with startups, agencies, and enterprise clients, helping them bring their visions to life. Each project has been an opportunity to push boundaries and explore new possibilities.",
-		'Today, I focus on creating high-performance web applications using modern technologies like React and Next.js, always striving for the perfect balance between form and function.',
+		'I started as a freelancer and grew into a senior engineer trusted to own frontend direction end-to-end, from UI foundations to complex business logic and performance-critical flows.',
+		'My experience spans startup products, internal tools, B2B systems, AI-driven platforms, public-sector websites, and high-load iGaming products, which taught me how to adapt quickly without sacrificing quality.',
+		'Today, I focus on scalable React and Next.js applications with strong architecture, reusable systems, clean code, and product-minded delivery that supports long-term growth.',
 	],
 	techStackTitle: 'Tech Stack',
 };
@@ -26,26 +26,27 @@ export const aboutContent = {
 export const aboutSkills = [
 	{
 		icon: CodeIcon,
-		title: 'Frontend Development',
-		description: 'Building modern, responsive interfaces with React, Next.js, TypeScript.',
+		title: 'Frontend Architecture',
+		description:
+			'Designing scalable React and Next.js applications using modular architecture and Feature-Sliced Design (FSD).',
 		color: 'primary',
 	},
 	{
 		icon: PaletteIcon,
-		title: 'UI/UX Design',
-		description: 'Creating intuitive experiences with attention to detail and accessibility.',
+		title: 'Product Interfaces',
+		description: 'Creating flows for real users, operators, managers, and internal teams.',
 		color: 'accent',
 	},
 	{
 		icon: TerminalIcon,
-		title: 'Clean Code',
-		description: 'Writing maintainable, scalable code following best practices.',
+		title: 'Maintainable Code',
+		description: 'Keeping large codebases readable, reusable, and ready for long-term growth.',
 		color: 'success',
 	},
 	{
 		icon: RocketIcon,
-		title: 'Performance',
-		description: 'Optimizing applications for speed and exceptional UX.',
+		title: 'High-Load Systems',
+		description: 'Building performant experiences for transaction-heavy and real-time products.',
 		color: 'primary',
 	},
 	{
@@ -56,8 +57,8 @@ export const aboutSkills = [
 	},
 	{
 		icon: ShieldIcon,
-		title: 'Best Practices',
-		description: 'Security-first approach with industry standards.',
+		title: 'Ownership',
+		description: 'Leading reviews, technical decisions, delivery planning, and frontend quality.',
 		color: 'success',
 	},
 ] as const;
@@ -68,23 +69,33 @@ export const aboutTechnologies = [
 	'TypeScript',
 	'JavaScript',
 	'Tailwind CSS',
-	'Node.js',
-	'GraphQL',
-	'REST APIs',
-	'Git',
-	'Figma',
-	'Framer Motion',
-	'Testing Library',
-	'Redux',
+	'TanStack Query',
 	'Zustand',
+	'Redux Toolkit',
+	'Redux',
+	'RTK Query',
+	'SWR',
+	'React Hook Form',
+	'Zod',
+	'Yup',
+	'REST APIs',
+	'Socket.io',
+	'NextAuth',
+	'i18n',
+	'Material UI',
+	'Radix UI',
+	'Shadcn UI',
+	'Framer Motion',
 	'Prisma',
-	'PostgreSQL',
+	'MongoDB',
+	'AWS S3',
+	'Vercel',
 ];
 
 export const aboutStats = [
-	{ value: 5, suffix: '+', label: 'Years Exp', textClass: 'text-primary' },
-	{ value: 15, suffix: '+', label: 'Projects', textClass: 'text-accent' },
-	{ value: 20, suffix: '+', label: 'Clients', textClass: 'text-success' },
+	{ value: 6, suffix: '+', label: 'Years Exp', textClass: 'text-primary' },
+	{ value: 5, suffix: '', label: 'Core Roles', textClass: 'text-accent' },
+	{ value: 20, suffix: '+', label: 'Key Tools', textClass: 'text-success' },
 ] as const;
 
 export const aboutSkillColorClasses = {

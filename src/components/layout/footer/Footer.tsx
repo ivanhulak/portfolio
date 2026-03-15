@@ -10,7 +10,7 @@ export function Footer() {
 
 	return (
 		<footer className="border-border/50 relative border-t bg-[#050508]">
-			<div className="absolute top-0 right-0 left-0 h-[1px] bg-gradient-to-r from-transparent via-[var(--neon-cyan)]/50 to-transparent" />
+			<div className="via-neon-cyan-soft/50 absolute top-0 right-0 left-0 h-[1px] bg-gradient-to-r from-transparent to-transparent" />
 
 			<div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
 				<div className="grid items-center gap-12 md:grid-cols-3">
@@ -22,7 +22,7 @@ export function Footer() {
 				<FooterBottom currentYear={currentYear} />
 			</div>
 
-			<div className="h-1 bg-gradient-to-r from-[var(--neon-cyan)] via-[var(--neon-magenta)] to-[var(--neon-green)]" />
+			<div className="to-neon-green-soft via-neon-magenta-soft from-neon-cyan-soft h-1 bg-gradient-to-r" />
 		</footer>
 	);
 }
