@@ -1,5 +1,3 @@
-'use client';
-
 export function AboutBackground() {
 	return (
 		<div className="absolute inset-0 overflow-hidden">
