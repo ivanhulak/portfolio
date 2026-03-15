@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 
 import { cn } from '@/lib/utils';
@@ -22,6 +20,7 @@ export function HeroImageCard() {
 						alt={heroContent.image.alt}
 						width={heroContent.image.width}
 						height={heroContent.image.height}
+						sizes="(min-width: 1024px) 550px, 90vw"
 						className="relative z-10 w-full max-w-lg rounded-xl object-cover"
 						priority
 					/>
