@@ -24,7 +24,7 @@ export const heroContent = {
 	},
 	scrollLabel: 'Explore',
 	image: {
-		src: '/images/brand-hero.png',
+		src: '/images/brand-hero.webp',
 		alt: 'Ivan Hulak - Senior Lead Frontend Developer',
 		width: 550,
 		height: 440,
