@@ -38,18 +38,37 @@ export function ContactCtaCard({ isInView }: TContactCtaCardProps) {
 						{contactContent.ctaDescription}
 					</p>
 
-					<Link
-						href={contactContent.ctaHref}
-						className={cn(
-							'group/btn text-background relative inline-flex items-center gap-3 rounded-xl px-10 py-5 font-semibold tracking-wider uppercase transition-all duration-500',
-							'from-primary to-accent shadow-primary/30 bg-gradient-to-r shadow-lg',
-							'hover:shadow-primary/50 hover:shadow-2xl'
-						)}
-					>
-						<MailIcon className="h-5 w-5" />
-						{contactContent.ctaLabel}
-						<ArrowUpRightIcon className="h-5 w-5 transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
-					</Link>
+					<div className="grid gap-4 md:grid-cols-2">
+						{contactContent.ctaOptions.map((option, index) => (
+							<Link
+								key={option.label}
+								href={option.href}
+								className={cn(
+									'group/btn relative rounded-2xl border p-6 text-left transition-all duration-500',
+									index === 0
+										? 'from-primary/12 to-accent/12 border-primary/30 hover:border-primary/60 hover:shadow-primary/20 bg-gradient-to-br hover:shadow-2xl'
+										: 'border-border/70 bg-card/70 hover:border-accent/50 hover:shadow-accent/15 hover:shadow-2xl'
+								)}
+							>
+								<div className="mb-4 flex items-center justify-between">
+									<div
+										className={cn(
+											'flex h-12 w-12 items-center justify-center rounded-xl',
+											index === 0 ? 'bg-primary/10 text-primary' : 'bg-accent/10 text-accent'
+										)}
+									>
+										<MailIcon className="h-5 w-5" />
+									</div>
+									<ArrowUpRightIcon className="h-5 w-5 transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
+								</div>
+
+								<p className="text-foreground text-lg font-semibold">{option.label}</p>
+								<p className="text-muted-foreground mt-2 text-sm leading-relaxed">
+									{option.description}
+								</p>
+							</Link>
+						))}
+					</div>
 				</div>
 			</div>
 		</div>

@@ -1,6 +1,6 @@
 import type { FC, SVGProps } from 'react';
 
-import { BriefcaseIcon, MailIcon, MapPinIcon, SendIcon } from '@/assets/icons';
+import { BriefcaseIcon, MailIcon, MapPinIcon, PhoneIcon, SendIcon } from '@/assets/icons';
 
 export type TFooterLink = {
 	href: string;
@@ -21,7 +21,13 @@ export const footerLinks: TFooterLink[] = [
 
 export const footerSocialLinks: TFooterSocialLink[] = [
 	{ href: 'mailto:dev.ivanhulak@gmail.com', icon: MailIcon, label: 'Email' },
-	{ href: 'tel:+380970625705', icon: SendIcon, label: 'Phone' },
+	{
+		href: 'https://t.me/ya_ivengo',
+		icon: SendIcon,
+		label: 'Telegram',
+		external: true,
+	},
+	{ href: 'tel:+380970625705', icon: PhoneIcon, label: 'Phone' },
 	{
 		href: 'https://maps.google.com/?q=Zhytomyr,Ukraine',
 		icon: MapPinIcon,
