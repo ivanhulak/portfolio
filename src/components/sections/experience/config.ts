@@ -89,7 +89,7 @@ export const experiences: readonly TExperience[] = [
 		color: 'accent',
 	},
 	{
-		role: 'Senior Lead Frontend Developer',
+		role: 'Middle Lead Frontend Developer',
 		company: 'GBMemories Inc',
 		location: 'Ukraine',
 		period: 'January 2023 - October 2023',
