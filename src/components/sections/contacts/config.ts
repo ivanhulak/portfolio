@@ -17,9 +17,19 @@ export const contactContent = {
 		'I’m open to senior frontend roles, product teams, and complex web platforms where architecture and delivery both matter.',
 	ctaTitle: 'Have a product that needs strong frontend ownership?',
 	ctaDescription:
-		"Let's talk if you need someone who can take responsibility for architecture, execution, and the details that make frontend systems reliable at scale.",
-	ctaHref: 'mailto:dev.ivanhulak@gmail.com',
-	ctaLabel: 'Send Me an Email',
+		"Let's talk if you need someone who can take responsibility for architecture, execution, and the details that make frontend systems reliable at scale. Choose the email that fits your context best.",
+	ctaOptions: [
+		{
+			href: 'mailto:dev.ivanhulak@gmail.com',
+			label: 'Work Email',
+			description: 'Best for hiring, contracts, and product collaboration.',
+		},
+		{
+			href: 'mailto:contact@ivanhulak.com',
+			label: 'Corporate Email',
+			description: 'Use this for business inquiries and company communication.',
+		},
+	] as const,
 } as const;
 
 export const contactIcons = {
@@ -62,11 +72,26 @@ export type TContactSocialLink = {
 
 export const contactSocialLinks: readonly TContactSocialLink[] = [
 	{
-		name: 'Email',
+		name: 'Work Email',
 		href: 'mailto:dev.ivanhulak@gmail.com',
 		icon: MailIcon,
 		username: 'dev.ivanhulak@gmail.com',
 		color: 'primary',
+	},
+	{
+		name: 'Corporate Email',
+		href: 'mailto:contact@ivanhulak.com',
+		icon: MailIcon,
+		username: 'contact@ivanhulak.com',
+		color: 'success',
+	},
+	{
+		name: 'Telegram',
+		href: 'https://t.me/ya_ivengo',
+		icon: SendIcon,
+		username: '@ya_ivengo',
+		color: 'primary',
+		isExternal: true,
 	},
 	{
 		name: 'Phone',

@@ -23,7 +23,7 @@ export function ContactSection() {
 				<ContactCtaCard isInView={isInView} />
 
 				<div
-					className="mx-auto grid max-w-4xl gap-6 transition-all delay-400 duration-1000 sm:grid-cols-2 lg:grid-cols-4"
+					className="mx-auto grid max-w-6xl gap-6 transition-all delay-400 duration-1000 sm:grid-cols-2 lg:grid-cols-3"
 					style={{
 						opacity: isInView ? 1 : 0,
 						transform: isInView ? 'translateY(0)' : 'translateY(40px)',

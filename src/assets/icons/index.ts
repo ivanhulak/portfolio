@@ -17,3 +17,4 @@ export { default as BriefcaseIcon } from './briefcase.svg';
 export { default as InstagramIcon } from './instagram.svg';
 export { default as ArrowUpRightIcon } from './arrow-up-right.svg';
 export { default as SparklesIcon } from './sparkles.svg';
+export { default as PhoneIcon } from './phone.svg';

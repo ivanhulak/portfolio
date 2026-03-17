@@ -1,4 +1,4 @@
-import { BriefcaseIcon, MailIcon, MapPinIcon, SendIcon } from '@/assets/icons';
+import { BriefcaseIcon, MailIcon, MapPinIcon, PhoneIcon, SendIcon } from '@/assets/icons';
 
 export const heroRoles = [
 	'Senior Lead Frontend Developer',
@@ -40,6 +40,12 @@ export const heroSocialLinks = [
 	},
 	{
 		icon: SendIcon,
+		href: 'https://t.me/ya_ivengo',
+		label: 'Telegram',
+		colorClass: 'hover:text-success hover:shadow-lg hover:shadow-success/30',
+	},
+	{
+		icon: PhoneIcon,
 		href: 'tel:+380970625705',
 		label: 'Phone',
 		colorClass: 'hover:text-accent hover:shadow-lg hover:shadow-accent/30',
