@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const portfolioMetadata: Metadata = {
-	metadataBase: new URL(process.env.NEXT_PUBLIC_WEBSITE_URL),
+	metadataBase: new URL(process.env.NEXT_PUBLIC_WEBSITE_URL || 'https://ivanhulak.com'),
 	title: 'Ivan Hulak | Senior Lead Frontend Developer',
 	description:
 		'Senior Lead Frontend Developer specializing in React, Next.js, and modern web technologies. Crafting exceptional digital experiences.',
@@ -17,7 +17,7 @@ export const portfolioMetadata: Metadata = {
 		type: 'website',
 		images: [
 			{
-				url: '/og-image.png',
+				url: '/og-image.jpg',
 				width: 1200,
 				height: 630,
 				alt: 'Portfolio preview',
@@ -31,7 +31,7 @@ export const portfolioMetadata: Metadata = {
 			'Senior Lead Frontend Developer specializing in scalable React, Next.js, and complex product systems.',
 		images: [
 			{
-				url: '/og-image.png',
+				url: '/og-image.jpg',
 				width: 1200,
 				height: 630,
 				alt: 'Portfolio preview',
