@@ -78,6 +78,7 @@ export default function ErrorPage({
 												<p className="text-accent font-mono text-xs tracking-[0.25em] uppercase">
 													Recovery
 												</p>
+
 												<p className="text-foreground mt-2 text-sm leading-relaxed">
 													Retry the render first. If the problem persists, return home and open the
 													page again from there.
